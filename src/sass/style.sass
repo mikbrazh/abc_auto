@@ -1,0 +1,79 @@
+@import "../libs/bootstrap/scss/bootstrap-reboot.scss"
+@import "../libs/bootstrap/scss/bootstrap-grid.scss"
+
+@import "vars"
+@import "fonts"
+// @import "animation"
+// @import "_mixins/remizer"
+@import "_mixins/emizer"
+
+// Basic Sass START ->
+::placeholder
+  color: #c0c0c0
+
+::selection
+  color: #ffffff
+  background-color: #ffffff
+
+body
+  position: relative
+  overflow-x: hidden
+  min-width: 320px
+  font-family: $font-general
+  font-size: 16px
+  line-height: 1.25
+  letter-spacing: 1.25px
+  color: $color-text
+  background-color: #fff
+  input, textarea
+    margin: 0
+    padding: 0
+    outline: none
+
+b, strong
+  font-weight: bold
+
+a:hover
+  text-decoration: none
+
+ul
+  margin: 0
+  padding: 0
+  list-style: none
+
+h1, h2, h3, h4, h5, h6
+  margin: 0
+  padding: 0
+
+p
+  margin: 0
+  padding: 0
+
+button
+  border: none
+  margin: 0
+  padding: 0
+  width: auto
+  overflow: visible
+  background: transparent
+  /* inherit font & color from ancestor */
+  color: inherit
+  font: inherit
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit
+  -moz-osx-font-smoothing: inherit
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none
+  /* Remove excess padding and border in Firefox 4+ */
+  &::-moz-focus-inner
+    border: 0
+    padding: 0
+// Basic Sass END ->
+
+// Custom Sass START->
+@import "_parts/_header" // Закомментируйте для верстки по секциям
+// Custom Sass END
+
+// @import "media" // Media queries. ALWAYS IN THE END
