@@ -79,7 +79,7 @@
   height: 89px
   background-color: $color-bg-tmp
 
-.header-middleline__burger
+.header-middleline__hamburger
   position: absolute
   left: 0
   top: 50%
@@ -130,7 +130,7 @@
   line-height: 19px
   letter-spacing: 0
   word-spacing: 0.2rem
-  color: #000000
+  color: #262626
   &::before
     content: ''
     position: absolute
@@ -143,3 +143,34 @@
 
 .header-middleline__logo-text--white
   color: #ffffff
+
+.header-middleline-col-2
+  position: relative
+
+.nav
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  margin-left: 12px
+
+.nav-item
+  display: inline-block
+  margin-right: 16px
+  font-family: $font-general
+  font-style: normal
+  font-weight: 400
+  font-size: 14px
+  line-height: 16px
+  color: #262626
+  &:last-child
+    margin-right: 0
+  &:hover
+    cursor: pointer
+    color: #CA0100
+    transition: $href-transition
+
+// .nav-item--selected
+//   color: #CA0100
+
+.phone-num
+
