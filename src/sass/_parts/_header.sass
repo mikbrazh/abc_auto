@@ -24,6 +24,8 @@
 
 .header-topline__text-1
   left: 23px
+  &:hover
+    cursor: pointer
   &::before
     content: ''
     position: absolute
@@ -50,7 +52,9 @@
 
 .header-topline__text-3
   right: 0
-  text-decoration: underline 
+  text-decoration: underline
+  &:hover
+    cursor: pointer
   &::before
     content: ''
     position: absolute
@@ -64,16 +68,16 @@
 
 .header-middleline-col-1
   position: relative
-  height: 105px
-  background-color: grey
+  height: 89px
+  background-color: $color-bg-tmp
 
 .header-middleline-col-2
-  height: 105px
-  background-color: grey
+  height: 89px
+  background-color: $color-bg-tmp
 
 .header-middleline-col-3
-  height: 105px
-  background-color: grey
+  height: 89px
+  background-color: $color-bg-tmp
 
 .header-middleline__burger
   position: absolute
@@ -84,16 +88,58 @@
   height: 22px
   width: 28px
   margin-right: 20px
-  background-color: tomato
+  background-image: url(../img/svg/hamburger.svg)
+  background-size: 100%
+  background-repeat: no-repeat
+  &:hover
+    cursor: pointer
 
 .header-middleline__logo
   position: absolute
-  left: 48px
+  left: 45px
   top: 50%
   transform: translateY(-50%)
   display: inline-block
-  height: 58px
-  width: 198px
+  height: 53px
+  width: 180px
   background-image: url(../img/svg/logo.svg)
   background-size: 100%
   background-repeat: no-repeat
+  &:hover
+    cursor: pointer
+  &::after
+    content: ''
+    position: absolute
+    bottom: 50%
+    transform: translateY(50%)
+    right: -15px
+    height: 31px
+    width: 1px
+    border: 1px solid #C2C2C4
+
+.header-middleline__logo-text
+  display: inline-block
+  position: absolute
+  right: 0
+  top: 50%
+  transform: translateY(-50%)
+  font-family: $font-general
+  font-style: normal
+  font-weight: 700
+  font-size: 16px
+  line-height: 19px
+  letter-spacing: 0
+  word-spacing: 0.2rem
+  color: #000000
+  &::before
+    content: ''
+    position: absolute
+    left: -5px
+    height: 19px
+    width: 61px
+    z-index: -1
+    background-color: #CA0100
+    border-radius: 22px
+
+.header-middleline__logo-text--white
+  color: #ffffff
