@@ -36,7 +36,7 @@ gulp.task('buildhtml', function() {
 // Минификация CSS и перенос в директорию distFolder
 gulp.task('buildcss', function() {
   return gulp.src(''+srcFolder+'/css/*.css')
-  // .pipe(rename({ suffix: '.min', prefix : '' }))
+  .pipe(rename({ suffix: '.min', prefix : '' }))
   .pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Закомментируйте для отключения минификации
   .pipe(gulp.dest(''+distFolder+'/css'))
   .pipe(browserSync.stream())
@@ -55,7 +55,7 @@ gulp.task('buildstyles', function() {
 gulp.task('buildvendorjs', function() {
   return gulp.src([ // Укажите путь к js библиотекам
     ''+srcFolder+'/libs/swiper/swiper-bundle.min.js',
-    // ''+srcFolder+'/libs/jquery/dist/jquery.min.js',
+    ''+srcFolder+'/libs/jquery/dist/jquery.min.js',
     // ''+srcFolder+'/libs/lazysizes/lazy.js',
     ])
   .pipe(concat('vendor.min.js'))

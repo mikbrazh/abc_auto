@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ABC AUTO</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/hamburgers-spin.min.css">
+
 </head>
 <body>
   <main class="main">
@@ -38,7 +40,11 @@
         <div class="row">
           <div class="col-4">
             <div class="header-middleline-col-1">
-              <div class="header-middleline__hamburger"></div>
+              <button class="header-middleline__hamburger hamburger hamburger--spin" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
               <div class="header-middleline__logo"></div>
               <span class="header-middleline__logo-text"><span class="header-middleline__logo-text--white">10 лет</span> превосходим<br>ваши ожидания</span>
             </div>
@@ -53,8 +59,9 @@
                 <li class="nav-item">Контакты</li>
               </ul>
             </div>
-            <span class="phone-num">+7 (800) 551-94-31
-              +7 (495) 292-18-67</span>
+            <span class="phone-num phone-num--upper"">+7 (800) 551-94-31</span>
+            <span class="phone-num phone-num--lower">+7 (495) 292-18-67</span>
+          </div>
           </div>
           <div class="col-2">
             <div class="header-middleline-col-3"></div>
@@ -69,5 +76,9 @@
 
 
   </main>
+
+
+<script src="js/vendor.min.js"></script>
+<script src="js/script.min.js"></script>
 </body>
 </html>
