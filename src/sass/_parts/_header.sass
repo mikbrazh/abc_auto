@@ -146,7 +146,7 @@
 
 .nav-item
   display: inline-block
-  margin-right: 10px
+  margin-right: 5px
   font-family: $font-general
   font-style: normal
   font-weight: 400
@@ -163,7 +163,7 @@
 
 .phone-num-wrap
   top: 50%
-  right: 180px
+  right: 210px
   position: absolute
   transform: translateY(-50%)
   text-align: right
@@ -192,3 +192,19 @@
   font-family: $font-general
   font-size: 16px
   letter-spacing: 0
+
+.backcall-btn
+  position: absolute
+  top: 50%
+  right: 0
+  transform: translateY(-50%)
+  padding: 16px 28px
+  font-family: $font-bold
+  font-size: 14px
+  letter-spacing: 0
+  border-radius: 6px
+  color: #ffffff
+  background-color: #CA0100
+  &:hover
+    background-color: lighten(#CA0100, 5%)
+    transition: $href-transition
