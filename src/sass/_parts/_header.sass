@@ -146,7 +146,7 @@
 
 .nav-item
   display: inline-block
-  margin-right: 16px
+  margin-right: 10px
   font-family: $font-general
   font-style: normal
   font-weight: 400
@@ -161,6 +161,34 @@
     color: #CA0100
     transition: $href-transition
 
-.phone-num
-  
+.phone-num-wrap
+  top: 50%
+  right: 180px
+  position: absolute
+  transform: translateY(-50%)
+  text-align: right
 
+.phone-num
+  display: block
+  color: #262626
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: -42px
+    height: 31px
+    width: 31px
+    background-image: url(../img/svg/phone-icon.svg)
+    background-size: 100%
+    background-repeat: no-repeat
+
+.phone-num--upper
+  margin-bottom: 1px
+  font-family: $font-bold
+  font-size: 24px
+  letter-spacing: 0
+
+.phone-num--lower
+  font-family: $font-general
+  font-size: 16px
+  letter-spacing: 0
