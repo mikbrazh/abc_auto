@@ -245,6 +245,7 @@
 
 .subnav-secondary
   display: none
+  z-index: 2
   position: absolute
   top: 30px
   right: 0
@@ -307,3 +308,96 @@
     background-image: url(../img/svg/search-icon.svg)
     background-size: 100%
     background-repeat: no-repeat
+
+.owl-carousel
+  max-width: 1870px
+  height: 600px
+  margin: 0 auto
+
+.owl-carousel-item
+  padding-top: 81px
+  height: 600px
+  background-image: url(../img/@2x/main-banner@2x.png)
+  background-size: 100%
+  background-repeat: no-repeat
+
+.owl-dots
+  position: absolute
+  bottom: 88px
+  left: 240px
+
+.owl-dot
+  width: 10px
+  height: 10px
+  margin-right: 15px
+  border-radius: 50%
+  background-color: #737373 !important
+  opacity: 0.5
+  &::last-child
+    margin-right: 0
+
+.owl-dot.active
+  width: 20px
+  height: 20px
+  border-radius: 50%
+  opacity: 0.6
+  background: none !important
+  border: 5px solid #CA0100 !important
+
+
+
+
+.owl-prev
+  span
+    display: none
+  &:before
+    content: ''
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    left: 50px
+    height: 34px
+    width: 34px
+    background-image: url(../img/svg/arrow-main-banner-left.svg)
+    background-size: 100%
+    background-repeat: no-repeat
+
+.owl-next
+  span
+    display: none
+  &:before
+    content: ''
+    position: absolute
+    top: 50%
+    right: 50px
+    transform: translateY(-50%)
+    height: 34px
+    width: 34px
+    background-image: url(../img/svg/arrow-main-banner-right.svg)
+    background-size: 100%
+    background-repeat: no-repeat
+
+.main-banner-text--top
+  display: inline-block
+  padding: 5px 13px
+  margin-bottom: 35px
+  border-radius: 33px
+  background-color: #CA0100
+  font-family: $font-bold
+  font-size: 16px
+  letter-spacing: 0
+  color: #fff
+  text-align: center
+
+.main-banner-text--offer
+  margin-bottom: 24px
+  font-family: $font-bold
+  font-size: 60px
+  letter-spacing: 0
+  color: #262626
+
+.main-banner-text--bottom
+  font-family: $font-general
+  font-size: 29px
+  letter-spacing: 0
+  color: #737373
