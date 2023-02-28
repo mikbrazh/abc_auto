@@ -18,6 +18,7 @@ $(function () {
       dotsEach: true,
       margin: 20
     });
+
   });
 
 });
