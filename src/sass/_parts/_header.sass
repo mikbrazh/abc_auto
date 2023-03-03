@@ -312,11 +312,9 @@
 .owl-carousel
   max-width: 1870px
   height: 600px
-  margin: 0 auto
+  margin: 0 auto 38px
 
 .owl-carousel-item
-  padding-top: 81px
-  height: 600px
   background-image: url(../img/@2x/main-banner@2x.png)
   background-size: 100%
   background-repeat: no-repeat
@@ -343,9 +341,6 @@
   opacity: 0.6
   background: none !important
   border: 5px solid #CA0100 !important
-
-
-
 
 .owl-prev
   span
@@ -376,6 +371,10 @@
     background-image: url(../img/svg/arrow-main-banner-right.svg)
     background-size: 100%
     background-repeat: no-repeat
+
+.main-banner-text-wrap
+  height: 600px
+  // padding-top: 81px
 
 .main-banner-text--top
   display: inline-block
@@ -436,5 +435,5 @@
       height: 38px
       background-image: url("../img/@2x/car-icon-sprite@2x.png")
       background-repeat: no-repeat
-      background-size: cover
+      background-size: auto 100%
       background-position: $position 0
