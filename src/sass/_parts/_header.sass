@@ -9,17 +9,26 @@
     height: 43px
     width: 100%
 
-@for $i from 1 through 3
-  .header-topline__text-#{$i}
-    position: absolute
-    top: 50%
-    transform: translateY(-50%)
-    font-size: 14px
-    font-family: $font-general
-    letter-spacing: 0
-    color: #737373
+// @for $i from 1 through 3
+//   .header-topline__text-#{$i}
+//     position: absolute
+//     top: 50%
+//     transform: translateY(-50%)
+//     font-size: 14px
+//     font-family: $font-general
+//     letter-spacing: 0
+//     color: #737373
 
-.header-topline__text-1
+.header-topline__text
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  font-size: 14px
+  font-family: $font-general
+  letter-spacing: 0
+  color: #737373
+
+.header-topline__text--map
   left: 23px
   &:hover
     cursor: pointer
@@ -38,7 +47,7 @@
     background-size: 100%
     background-repeat: no-repeat
 
-.header-topline__text-2
+.header-topline__text--timetable
   right: 0
   &::before
     content: ''
@@ -53,7 +62,7 @@
     background-size: 100%
     background-repeat: no-repeat
 
-.header-topline__text-3
+.header-topline__text--whatsapp
   right: 0
   text-decoration: underline
   &:hover
