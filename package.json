@@ -31,6 +31,6 @@
     "gulp-uglify-es": "^2.0.0"
   },
   "dependencies": {
-    "swiper": "^8.1.4"
+    "swiper": "^8.4.7"
   }
 }

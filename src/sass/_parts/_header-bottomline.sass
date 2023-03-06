@@ -1,0 +1,123 @@
+// HEADER-BOTTOMLINE START
+.header-bottomline
+  padding-top: 15px
+
+.nav-secondary > .item
+  position: relative
+  display: inline-block
+  margin-right: 58px
+  font-family: $font-bold
+  font-size: 15px
+  letter-spacing: 0
+  cursor: pointer
+  &:last-child
+    margin-right: 0
+  & > a
+    padding-right: 22px
+    color: #262626
+    text-decoration: none
+    text-transform: uppercase
+    &:last-child
+      padding-right: 0
+    &:hover
+      color: lighten(#262626, 20%)
+      transition: $href-transition
+
+@for $i from 1 through 4
+  .nav-secondary .item-#{$i}::after
+    content: ''
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    right: 0
+    width: 12px
+    height: 7px
+    // background-image: url(../img/svg/arrow-down.svg)
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNS45MjggNy40MmEuODIzLjgyMyAwIDAxLS41ODctLjI0NkwuMjQzIDIuMDE0YS44NDguODQ4IDAgMDEwLTEuMTg4LjgyMy44MjMgMCAwMTEuMTc0IDBsNC41MTEgNC41NjZMMTAuNDQuODI2YS44MjMuODIzIDAgMDExLjE3NCAwIC44NDcuODQ3IDAgMDEwIDEuMTg5bC01LjA5OCA1LjE2YS44MjMuODIzIDAgMDEtLjU4Ny4yNDV6IiBmaWxsPSIjNzM3MzczIi8+PC9zdmc+)
+    background-size: 100%
+    background-position: center
+    background-repeat: no-repeat
+
+.nav-secondary .item:hover::after
+  cursor: pointer
+
+.subnav-secondary
+  display: none
+  z-index: 2
+  position: absolute
+  top: 5px
+  right: 0
+  padding: 20px 20px 20px
+
+.subnav-secondary.is-active
+  display: block
+  transition: $href-transition
+
+.subnav-secondary .item
+  margin-bottom: 5px
+  a
+    color: #262626
+    text-decoration: none
+    &:hover
+      color: lighten(#262626, 20%)
+      transition: $href-transition
+
+
+// HEADER-MIDDLELINE END
+
+.header-bottomline__heart-icon, .header-bottomline__metrics-icon, .header-bottomline__search-icon
+  display: inline-block
+  cursor: pointer
+
+.header-bottomline__heart-icon
+    position: relative
+    margin-left: 60px
+    margin-right: 30px
+    width: 24px
+    height: 21px
+    background-image: url(../img/svg/heart-icon.svg)
+    background-size: 100%
+    background-repeat: no-repeat
+    &::after
+      content: '10'
+      position: absolute
+      top: -12px
+      right: -21px
+      color: #fff
+      padding: 1px 6px
+      border-radius: 14px
+      border: 1px solid #fff
+      font-family: $font-bold
+      font-size: 14px
+      letter-spacing: 0
+      background-color: #CA0100
+
+.header-bottomline__metrics-icon
+    position: relative
+    margin-right: 30px
+    width: 17px
+    height: 21px
+    background-image: url(../img/svg/metrics-icon.svg)
+    background-size: 100%
+    background-repeat: no-repeat
+    &::after
+      content: '12'
+      position: absolute
+      top: -12px
+      right: -21px
+      color: #fff
+      padding: 1px 6px
+      border-radius: 14px
+      border: 1px solid #fff
+      font-family: $font-bold
+      font-size: 14px
+      letter-spacing: 0
+      background-color: #CA0100
+
+.header-bottomline__search-icon
+    width: 21px
+    height: 21px
+    background-image: url(../img/svg/search-icon.svg)
+    background-size: 100%
+    background-repeat: no-repeat
+// HEADER-BOTTOMLINE END

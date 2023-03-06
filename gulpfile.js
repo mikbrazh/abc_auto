@@ -55,7 +55,7 @@ gulp.task('buildstyles', function() {
 gulp.task('buildvendorjs', function() {
   return gulp.src([ // Укажите путь к js библиотекам
   ''+srcFolder+'/libs/jquery/dist/jquery.min.js',
-  ''+srcFolder+'/libs/OwlCarousel2-2.3.4/js/owl.carousel.min.js',
+  // ''+srcFolder+'/libs/OwlCarousel2-2.3.4/js/owl.carousel.min.js',
     // ''+srcFolder+'/libs/swiper/swiper-bundle.min.js',
     // ''+srcFolder+'/libs/lazysizes/lazy.js',
     ])

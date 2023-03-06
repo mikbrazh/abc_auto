@@ -1,0 +1,76 @@
+// HEADER-TOPLINE START
+.header-topline
+  height: 43px
+  background-color: #EFF0F0
+
+.header-topline-col-left, .header-topline-col-middle, .header-topline-col-right
+  position: relative
+  height: 43px
+  width: 100%
+
+.header-topline__text
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  font-size: 14px
+  font-family: $font-general
+  letter-spacing: 0
+  color: #737373
+
+.header-topline-col-left .header-topline__text
+  left: 23px
+  &:hover
+    cursor: pointer
+    color: lighten(#737373, 10%)
+    transition: $href-transition
+  &::before
+    content: ''
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    left: -23px
+    width: 14px
+    height: 16px
+    // background-image: url(../img/svg/pointer-icon.svg)
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTciIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTcuMDcxIDBhNy4wNzIgNy4wNzIgMCAwMTcuMDcyIDcuMDcxYzAgMi45MjgtMi4yMzIgNS45OTUtNi42IDkuMjcyYS43ODYuNzg2IDAgMDEtLjk0MyAwQzIuMjMxIDEzLjA2NiAwIDkuOTk5IDAgNy4wN0E3LjA3MSA3LjA3MSAwIDAxNy4wNzEgMHptMCAxLjU3MWE1LjUgNS41IDAgMDAtNS41IDUuNWMwIDIuMTMgMS42NjUgNC41ODYgNS4wNjcgNy4zMTJsLjQzMy4zNDMuNDM0LS4zNDNjMy40MDItMi43MjYgNS4wNjYtNS4xODIgNS4wNjYtNy4zMTJhNS41IDUuNSAwIDAwLTUuNS01LjV6bTAgMy45MjlhMS41NzEgMS41NzEgMCAxMTAgMy4xNDMgMS41NzEgMS41NzEgMCAwMTAtMy4xNDN6IiBmaWxsPSIjNzM3MzczIi8+PC9zdmc+)
+    background-size: 100%
+    background-position: center
+    background-repeat: no-repeat
+
+.header-topline-col-middle .header-topline__text
+  right: 0
+  &::before
+    content: ''
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    left: -23px
+    width: 16px
+    height: 16px
+    // background-image: url(../img/svg/clock-icon.svg)
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTggMEMzLjU4OSAwIDAgMy41ODkgMCA4czMuNTg5IDggOCA4IDgtMy41ODkgOC04LTMuNTg5LTgtOC04em0wIDE0LjRBNi40MDcgNi40MDcgMCAwMTEuNiA4YzAtMy41MjkgMi44NzEtNi40IDYuNC02LjQgMy41MjkgMCA2LjQgMi44NzEgNi40IDYuNCAwIDMuNTI5LTIuODcxIDYuNC02LjQgNi40eiIgZmlsbD0iIzczNzM3MyIvPjxwYXRoIGQ9Ik04LjggNEg3LjJ2NC44SDEyVjcuMkg4LjhWNHoiIGZpbGw9IiM3MzczNzMiLz48L3N2Zz4=)
+    background-size: 100%
+    background-position: center
+    background-repeat: no-repeat
+
+.header-topline-col-right .header-topline__text
+  right: 0
+  text-decoration: underline
+  &:hover
+    cursor: pointer
+    color: lighten(#737373, 10%)
+    transition: $href-transition
+  &::before
+    content: ''
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    left: -27px
+    width: 20px
+    height: 20px
+    // background-image: url(../img/svg/whatsapp-icon.svg)
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE4LjUwNCA0LjYyNUMxNS41MTIgMCA5LjQwNC0xLjM3NSA0LjY2NyAxLjUuMDU1IDQuMzc1LTEuNDQgMTAuNjI1IDEuNTUxIDE1LjI1bC4yNS4zNzUtLjk5OCAzLjc1IDMuNzQtMSAuMzc0LjI1QzYuNTM3IDE5LjUgOC4yODIgMjAgMTAuMDI3IDIwYzEuODcgMCAzLjc0LS41IDUuMzYtMS41IDQuNjEzLTMgNS45ODQtOS4xMjUgMy4xMTctMTMuODc1em0tMi42MTggOS42MjVjLS40OTguNzUtMS4xMjEgMS4yNS0xLjk5NCAxLjM3NS0uNDk5IDAtMS4xMjIuMjUtMy42MTUtLjc1LTIuMTItMS0zLjg2NC0yLjYyNS01LjExMS00LjUtLjc0OC0uODc1LTEuMTIyLTItMS4yNDctMy4xMjUgMC0xIC4zNzQtMS44NzUuOTk4LTIuNS4yNDktLjI1LjQ5OC0uMzc1Ljc0OC0uMzc1aC42MjNjLjI1IDAgLjQ5OSAwIC42MjMuNS4yNS42MjUuODczIDIuMTI1Ljg3MyAyLjI1YS4zODEuMzgxIDAgMDEwIC41Yy4xMjQuMjUgMCAuNS0uMTI1LjYyNS0uMTI0LjEyNS0uMjUuMzc1LS4zNzQuNS0uMjUuMTI1LS4zNzQuMzc1LS4yNS42MjUuNS43NSAxLjEyMyAxLjUgMS43NDYgMi4xMjUuNzQ4LjYyNSAxLjQ5NiAxLjEyNSAyLjM2OCAxLjUuMjUuMTI1LjUuMTI1LjYyNC0uMTI1LjEyNS0uMjUuNzQ4LS44NzUuOTk3LTEuMTI1LjI1LS4yNS4zNzQtLjI1LjYyMy0uMTI1bDEuOTk1IDFjLjI1LjEyNS40OTguMjUuNjIzLjM3NS4xMjUuMzc1LjEyNS44NzUtLjEyNCAxLjI1eiIgZmlsbD0iIzczNzM3MyIvPjwvc3ZnPg==)
+    background-size: 100%
+    background-position: center
+    background-repeat: no-repeat
+// HEADER-TOPLINE END
