@@ -142,72 +142,40 @@
 
     <!-- SWIPER START -->
     <div class="swiper">
-      <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        ...
+        <div class="swiper-slide">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="slide-inner-wrap">Slide 1</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="slide-inner-wrap">Slide 2</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="slide-inner-wrap">Slide 3</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- If we need pagination -->
       <div class="swiper-pagination"></div>
-    
-      <!-- If we need navigation buttons -->
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
-    
-      <!-- If we need scrollbar -->
-      <div class="swiper-scrollbar"></div>
     </div>
     <!-- SWIPER END -->
-
-    <!-- OWL CAROUSEL HTML START -->
-    <!-- <div class="owl-carousel">
-      <div class="owl-carousel-item">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <div class="main-banner-text-wrap">
-                <div class="main-banner-text main-banner-text--top">Осталось всего 10 авто!</div>
-                <h1 class="main-banner-text main-banner-text--offer">Грандиозная распродажа<br>
-                  тестового парка!</h1>
-                <span class="main-banner-text main-banner-text--bottom">Узнай свою цену!</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="owl-carousel-item">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <div class="main-banner-text-wrap">
-                <div class="main-banner-text main-banner-text--top">Осталось всего 10 авто!</div>
-                <h1 class="main-banner-text main-banner-text--offer">Грандиозная распродажа<br>
-                  тестового парка!</h1>
-                <span class="main-banner-text main-banner-text--bottom">Узнай свою цену!</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="owl-carousel-item">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <div class="main-banner-text-wrap">
-                <div class="main-banner-text main-banner-text--top">Осталось всего 10 авто!</div>
-                <h1 class="main-banner-text main-banner-text--offer">Грандиозная распродажа<br>
-                  тестового парка!</h1>
-                <span class="main-banner-text main-banner-text--bottom">Узнай свою цену!</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- OWL CAROUSEL HTML END -->
 
     <!-- CAR-SELECTION START -->
     <!-- <div class="car-selection">
@@ -275,6 +243,30 @@
   <script src="js/vendor.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="js/script.min.js"></script>
+
+  <script>
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });
+  </script>
 
 </body>
 </html>
