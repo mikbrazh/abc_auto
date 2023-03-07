@@ -6,14 +6,11 @@ body
   transform: translateY(-50%) // temp
 
 .car-selection-group
-  background-color: black
-
-.car-selection-group
   padding: 20px 20px 20px 78px
 
   border-radius: 11px
   // background-color: rgba(239, 240, 240, 0.5)
-  background-color: #c0c0c0
+  background-color: #c0c0c0 // temp
 
 .car-selection-icons
   display: flex
@@ -34,7 +31,7 @@ body
     margin-right: 0
 
 .car-selection-icons__item
-  margin-bottom: 34px
+  margin-bottom: 20px
 
   color: #262626
 
@@ -63,7 +60,67 @@ body
 
 // CAR-SELECTION-FORM START
 .car-selection-form
-  // width: 100%
-  // height: 10%
-  background-color: darken(#c0c0c0, 30%)
+  padding: 27px 30px 44px 50px
+  background-color: darken(#c0c0c0, 10%) // temp
+
+.car-selection-form__title
+  margin-bottom: 22px
+
+  font-family: $font-bold
+  font-size: 24px
+  letter-spacing: 0
+  color: #262626
+
+.car-selection-form__group-radio
+  margin-bottom: 20px
+
+.car-selection-form__group-select
+  margin-bottom: 20px
+
+.car-selection-form__button
+  width: 100%
+  height: 65px
+
+  font-family: $font-general
+  font-size: 16px
+  letter-spacing: 0
+  text-transform: uppercase
+  color: #fff
+
+  border-radius: 6px
+  background-color: #CA0100
+  &:hover
+    background-color: lighten(#CA0100, 3%)
+    transition: $href-transition
+
+.car-selection-form__dropdown-group
+  margin-bottom: 25px
+  width: 100%
+
+.car-selection-form__dropdown-button
+  position: relative
+  display: inline-block
+  padding: 21px 0 24px 15px
+  width: 100%
+  height: 65px
+  text-align: left
+
+  background-color: #fff
+  border: 1px solid #E1E1E1
+  border-radius: 6px
+  &::after
+    content: ''
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    right: 15px
+
+    width: 12px
+    height: 12px
+
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzIxNTdfMjYzNzIpIj4KPHBhdGggZD0iTTUuOTI4MzIgOS40MjAxNkM1LjcxNTgyIDkuNDIwMTYgNS41MDMzNSA5LjMzODA1IDUuMzQxMzQgOS4xNzQxNkwwLjI0MzIzIDQuMDE0MzhDLTAuMDgxMDc2NiAzLjY4NjE2IC0wLjA4MTA3NjYgMy4xNTQgMC4yNDMyMyAyLjgyNTlDMC41Njc0MDUgMi40OTc4MSAxLjA5MzExIDIuNDk3ODEgMS40MTc0NCAyLjgyNTlMNS45MjgzMiA3LjM5MTU2TDEwLjQzOTIgMi44MjYwNkMxMC43NjM1IDIuNDk3OTcgMTEuMjg5MiAyLjQ5Nzk3IDExLjYxMzMgMi44MjYwNkMxMS45Mzc4IDMuMTU0MTYgMTEuOTM3OCAzLjY4NjMyIDExLjYxMzMgNC4wMTQ1NEw2LjUxNTI5IDkuMTc0MzJDNi4zNTMyIDkuMzM4MjMgNi4xNDA3MyA5LjQyMDE2IDUuOTI4MzIgOS40MjAxNloiIGZpbGw9IiMyNjI2MjYiLz4KPC9nPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMF8yMTU3XzI2MzcyIj4KPHJlY3Qgd2lkdGg9IjExLjg1NjciIGhlaWdodD0iMTIiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==)
+    background-size: 100%
+    background-position: center
+    background-repeat: no-repeat
+
   // CAR-SELECTION-FORM END
