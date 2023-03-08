@@ -193,11 +193,11 @@
     <!-- SWIPER END -->
 
     <!-- CAR-SELECTION START -->
-    <div class="car-selection">
+    <div class="car-selection-section">
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="car-selection-group">
+            <div class="car-selection">
               <div class="row">
                 <div class="col-7">
                   <div class="car-selection-icons">
@@ -253,7 +253,7 @@
                 <div class="col-5">
                   <div class="car-selection-form">
                     <h1 class="car-selection-form__title">Быстрый подбор авто</h1>
-                    <div class="car-selection-form__group-radio">
+                    <div class="car-selection-form-radio-group">
                       <input type="radio" id="contactChoice1"
                       name="contact" value="email" checked>
                       <label for="contactChoice1">Email</label>
@@ -306,15 +306,21 @@
                         <option value="robot">Робот</option>
                       </select>
                     </div> -->
-                    <div class="car-selection-form__dropdown-group">
+                    <div class="car-selection-form-dropdown-group">
                       <div class="row">
                         <div class="col">
-                          <button class="car-selection-form__dropdown-button">Седан</button>
-
+                          <div class="car-selection-form-dropdown">
+                            <button class="car-selection-form-dropdown__button">Седан</button>
+                            <ul class="car-selection-form-dropdown__list">
+                              <li class="car-selection-form-dropdown__list-item" data-value="sedan">Седан</li>
+                              <li class="car-selection-form-dropdown__list-item" data-value="station_wagon">Универсал</li>
+                              <li class="car-selection-form-dropdown__list-item" data-value="hatchback">Хэтчбек</li>
+                            </ul>
+                            <input type="text" name="select-category" value="" class="car-selection-form-dropdown__input-hidden">
+                          </div>
                         </div>
                         <div class="col">
-                          <button class="car-selection-form__dropdown-button">Автомат</button>
-
+                          12345
                         </div>
                       </div>
                     </div>

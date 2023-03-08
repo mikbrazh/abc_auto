@@ -2,10 +2,10 @@
 body
   padding-top: 50vh // temp
 
-.car-selection
+.car-selection-section
   transform: translateY(-50%) // temp
 
-.car-selection-group
+.car-selection
   padding: 20px 20px 20px 78px
 
   border-radius: 11px
@@ -71,7 +71,7 @@ body
   letter-spacing: 0
   color: #262626
 
-.car-selection-form__group-radio
+.car-selection-form-radio-group
   margin-bottom: 20px
 
 .car-selection-form__group-select
@@ -92,12 +92,20 @@ body
   &:hover
     background-color: lighten(#CA0100, 3%)
     transition: $href-transition
+  &:active
+    background-color: lighten(#CA0100, 6%)
 
-.car-selection-form__dropdown-group
+.car-selection-form-dropdown-group
   margin-bottom: 25px
   width: 100%
 
-.car-selection-form__dropdown-button
+.car-selection-form-dropdown
+  position: relative
+  display: inline-block
+
+  width: 100%
+
+.car-selection-form-dropdown__button
   position: relative
   display: inline-block
   padding: 21px 0 24px 15px
@@ -122,5 +130,43 @@ body
     background-size: 100%
     background-position: center
     background-repeat: no-repeat
+    pointer-events: none
+  &:focus, .car-selection-form-dropdown__button--active
+    outline: none
+    box-shadow: 0px 0px 0px 4px rgba(176, 198, 225, 0.6)
+
+.car-selection-form-dropdown__list
+  position: absolute
+  bottom: 0
+  top: 64px
+
+  display: none
+
+  width: 100%
+
+.car-selection-form-dropdown__list--visible
+  display: block
+
+.car-selection-form-dropdown__list-item
+  padding: 21px 0 24px 15px
+  background-color: #fff
+  border: 1px solid #E1E1E1
+  border-bottom: 0
+  cursor: pointer
+  &:hover
+    background-color: darken(#fff, 10%)
+    transition: $href-transition
+  &:first-child
+    border-radius: 6px 6px 0 0
+  &:last-child
+    border-bottom: 1px solid #E1E1E1
+    border-radius: 0 0 6px 6px
+
+.car-selection-form-dropdown__input-hidden
+  display: none
+
+
+
+
 
   // CAR-SELECTION-FORM END
