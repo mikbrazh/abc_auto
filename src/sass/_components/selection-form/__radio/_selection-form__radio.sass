@@ -1,4 +1,25 @@
 .selection-form__radio
+  position: relative
   margin-bottom: 19px
   height: 64px
   background-color: darken(#c0c0c0, 10%) // tmp
+  &:before
+    content: 'Цена'
+    position: absolute
+    top: -25px
+    left: 0
+    font-family: $font-general
+    font-weight: 400
+    font-size: em(16px)
+    letter-spacing: 0
+    color: #262626
+  &:after
+    content: '0 - 500т'
+    position: absolute
+    top: -25px
+    right: 0
+    font-family: $font-general
+    font-weight: 700
+    font-size: em(16px)
+    letter-spacing: 0
+    color: #262626

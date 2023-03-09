@@ -1,10 +1,19 @@
+.selection-form__dropdown-content
+  margin-bottom: 25px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+
 .selection-form__dropdown
   position: relative
   width: 100%
+  &:first-child
+    margin-right: 15px
+  &:last-child
+    margin-right: 0
 
 .selection-form__dropdown-group
   position: relative
-  margin-bottom: 25px
 
 .selection-form__dropdown-button
   // Обнуление стилей
@@ -52,6 +61,7 @@
   position: absolute
   top: 64px
   left: 0
+  z-index: 1
 
 .selection-form__dropdown-list--visible
   display: block
