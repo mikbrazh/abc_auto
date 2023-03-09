@@ -12,68 +12,68 @@
 @import "_mixins/emizer"
 
 // Basic Sass START ->
-::placeholder
-  color: #c0c0c0
+// ::placeholder
+//   color: #c0c0c0
 
-::selection
-  color: #fff 
-  background-color: #CA0100
+// ::selection
+//   color: #fff 
+//   background-color: #CA0100
 
-body
-  position: relative
-  overflow-x: hidden
-  min-width: 320px
-  font-family: $font-general
-  font-size: 16px
-  line-height: 1.25
-  letter-spacing: 1.25px
-  color: $color-text
-  background-color: #fff
-  input, textarea
-    margin: 0
-    padding: 0
-    outline: none
+// body
+//   position: relative
+//   overflow-x: hidden
+//   min-width: 320px
+//   font-family: $font-general
+//   font-size: 16px
+//   line-height: 1.25
+//   letter-spacing: 1.25px
+//   color: $color-text
+//   background-color: #fff
+//   input, textarea
+//     margin: 0
+//     padding: 0
+//     outline: none
 
-b, strong
-  font-weight: bold
+// b, strong
+//   font-weight: bold
 
-a:hover
-  text-decoration: none
+// a:hover
+//   text-decoration: none
 
-ul
-  margin: 0
-  padding: 0
-  list-style: none
+// ul
+//   margin: 0
+//   padding: 0
+//   list-style: none
 
-h1, h2, h3, h4, h5, h6
-  margin: 0
-  padding: 0
+// h1, h2, h3, h4, h5, h6
+//   margin: 0
+//   padding: 0
 
-p
-  margin: 0
-  padding: 0
+// p
+//   margin: 0
+//   padding: 0
 
-button
-  border: none
-  margin: 0
-  padding: 0
-  width: auto
-  overflow: visible
-  background: transparent
-  /* inherit font & color from ancestor */
-  color: inherit
-  font: inherit
-  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
-  line-height: normal
-  /* Corrects font smoothing for webkit */
-  -webkit-font-smoothing: inherit
-  -moz-osx-font-smoothing: inherit
-  /* Corrects inability to style clickable `input` types in iOS */
-  -webkit-appearance: none
-  /* Remove excess padding and border in Firefox 4+ */
-  &::-moz-focus-inner
-    border: 0
-    padding: 0
+// button
+//   border: none
+//   margin: 0
+//   padding: 0
+//   width: auto
+//   overflow: visible
+//   background: transparent
+//   /* inherit font & color from ancestor */
+//   color: inherit
+//   font: inherit
+//   /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+//   line-height: normal
+//   /* Corrects font smoothing for webkit */
+//   -webkit-font-smoothing: inherit
+//   -moz-osx-font-smoothing: inherit
+//   /* Corrects inability to style clickable `input` types in iOS */
+//   -webkit-appearance: none
+//   /* Remove excess padding and border in Firefox 4+ */
+//   &::-moz-focus-inner
+//     border: 0
+//     padding: 0
 // Basic Sass END ->
 
 // Custom Sass START->
@@ -81,8 +81,14 @@ button
 // @import "_parts/_header-middleline" // Закомментируйте для верстки по секциям
 // @import "_parts/_header-bottomline" // Закомментируйте для верстки по секциям
 // @import "_parts/_main-swiper" // Закомментируйте для верстки по секциям
-@import "_parts/_main-car-selection" // Закомментируйте для верстки по секциям
+// @import "_parts/_main-car-selection" // Закомментируйте для верстки по секциям
 // @import "_parts/_header" // Закомментируйте для верстки по секциям
+@import "_components/selection-form/_selection-form"
+@import "_components/selection-form/__title/selection-form__title"
+@import "_components/selection-form/__radio/selection-form__radio"
+@import "_components/selection-form/__dropdown/selection-form__dropdown"
+@import "_components/selection-form/--mod/_selection-form__dropdown-button--main-vertical"
+@import "_components/selection-form/__button/selection-form__button"
 // Custom Sass END
 
 // @import "media" // Media queries. ALWAYS IN THE END
