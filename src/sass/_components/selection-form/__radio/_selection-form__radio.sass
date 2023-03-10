@@ -87,13 +87,15 @@
 
 .selection-form__radio-btn-custom
   position: absolute
-  display: none
+  opacity: 0
   width: 14px
   height: 14px
   border-radius: 50%
   background-color: #CA0100
   cursor: pointer
+  pointer-events: none
+  transition: $href-transition
 
+.selection-form__radio-btn-default:focus + .selection-form__radio-btn-custom
+  opacity: 1
 
-.selection-form__radio-btn-default:checked + .selection-form__radio-btn-custom
-  display: inline-block
