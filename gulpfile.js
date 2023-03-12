@@ -68,6 +68,7 @@ gulp.task('buildscriptjs', function() {
   return gulp.src([ // Укажите путь к основному js файлу
     ''+srcFolder+'/js/script.js',
     ''+srcFolder+'/js/selection-form__dropdown.js',
+    ''+srcFolder+'/js/selection-form__radio.js',
     ])
   .pipe(concat('script.min.js'))
   .pipe(uglify()) // Закомментируйте для отключения минификации
