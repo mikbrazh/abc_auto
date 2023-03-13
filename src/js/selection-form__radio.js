@@ -19,12 +19,14 @@
       lebel.addEventListener('click', function () {
         console.log(this);
 
-
         const formScaleAll = document.querySelectorAll('.selection-form__radio-scale');
-
-        
         const closestFormScale = this.closest('.selection-form__radio-scale');
-        console.log('formScaleAll: ' + formScaleAll);
+        const qwe = closestFormScale.closest('.selection-form__radio-scale');
+
+        console.log(closestFormScale);
+        console.log(qwe);
+        
+        // console.log('formScaleAll: ' + formScaleAll);
         // console.log('closestFormScale: ' + closestFormScale);
 
         
