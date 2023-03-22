@@ -19,6 +19,7 @@
         dropDownBtn.innerText = this.innerText;
         dropDownBtn.focus();
         dropDownInput.value = this.dataset.value;
+        console.log(dropDownInput.value);
         dropDownList.classList.remove('selection-form__dropdown-list--visible');
       });
     });

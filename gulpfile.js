@@ -67,6 +67,7 @@ gulp.task('buildvendorjs', function() {
 gulp.task('buildscriptjs', function() {
   return gulp.src([ // Укажите путь к основному js файлу
     ''+srcFolder+'/js/script.js',
+    ''+srcFolder+'/js/selection-form__button.js',
     ''+srcFolder+'/js/selection-form__dropdown.js',
     ''+srcFolder+'/js/selection-form__radio.js',
     ])
