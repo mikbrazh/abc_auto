@@ -1,5 +1,7 @@
 (function () {
 
+
+  // Анимация шкалы scale НАЧАЛО
   const formRadioLabel = document.querySelectorAll('.selection-form__radio-label');
   const formRadioScale = document.querySelectorAll('.selection-form__radio-scale');
 
@@ -8,11 +10,13 @@
 
     // Устанавливаем обработчик
     labelItem.addEventListener('click', function() {
-      formRadioScale.forEach( (scaleItem) => {
+      formRadioScale.forEach( (scaleItem) => {  
 
         // Сравниваем значения dataset.number
         const scaleItemDataVal = Number(scaleItem.dataset.number);
         const labelItemDataVal = Number(this.dataset.number);
+
+        console.log(labelItemDataVal);
 
         // Если условие выполняется, красим в другой цвет
         if ( scaleItemDataVal < labelItemDataVal ) {
@@ -23,5 +27,6 @@
       }); 
     });
   });
+  // Анимация шкалы scale КОНЕЦ
  
 })();
