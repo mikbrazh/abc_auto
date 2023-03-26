@@ -327,7 +327,7 @@
     <div class="selection-form">
       <h1 class="selection-form__title">Быстрый подбор авто</h1>
       <div class="selection-form__radio unselectable">
-        <div class="selection-form__radio-scale" data-number="0">
+        <div class="selection-form__radio-scale selection-form__radio-scale--color-red" data-number="0">
           <div class="selection-form__radio-btn-wrapper">
             <input id="price-0" class="selection-form__radio-btn-default" type="radio" name="price" value="0">
             <span class="selection-form__radio-btn-custom"></span>
@@ -336,7 +336,7 @@
         </div>
         <div class="selection-form__radio-scale" data-number="500">
           <div class="selection-form__radio-btn-wrapper">
-            <input id="price-500" class="selection-form__radio-btn-default" type="radio" name="price" value="0">
+            <input id="price-500" class="selection-form__radio-btn-default" type="radio" name="price" value="0" checked>
             <span class="selection-form__radio-btn-custom"></span>
             <label class="selection-form__radio-label" for="price-500" data-number="500">500т</label>
           </div>
@@ -396,7 +396,7 @@
           </div>
         </div>
       </div>
-      <div class="selection-form__dropdown-wrapper">
+      <div class="selection-form__dropdown-wrapper unselectable">
         <div class="selection-form__dropdown">
           <div class="selection-form__dropdown-group">
             <button class="selection-form__dropdown-button selection-form__dropdown-button--lg">Седан</button>
@@ -420,7 +420,7 @@
           </div>
         </div>
       </div>
-      <button class="selection-form__button" onclick="return false">Показать</button>
+      <button class="selection-form__button unselectable" onclick="return false">Показать</button>
     </div>
     <!-- selection-form END -->
 
